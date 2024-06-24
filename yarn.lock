@@ -7941,12 +7941,12 @@ react-side-effect@^2.1.0:
   resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-2.1.2.tgz#dc6345b9e8f9906dc2eeb68700b615e0b4fe752a"
   integrity sha512-PVjOcvVOyIILrYoyGEpDN3vmYNLdy1CajSFNt4TDsVQC5KpTijDvWVoR+/7Rz2xT978D8/ZtFceXxzsPwZEDvw==
 
-react-signature-pad-wrapper@^3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/react-signature-pad-wrapper/-/react-signature-pad-wrapper-3.4.0.tgz#5f59b04d8c19cc498c49c09ab91ab0247e6694e5"
-  integrity sha512-fJpcRGWu6STHVFl+boZGXABHLVUEucqaRliJIoSrmPl895Gwz9KnYrhHgIRr5Och5u7M4zssQBChjpRGmIpZ0A==
+react-signature-pad-wrapper@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/react-signature-pad-wrapper/-/react-signature-pad-wrapper-4.0.1.tgz#4839d18b0d56db6b19116ac5ef4eaed19fb32dbb"
+  integrity sha512-dQ8UxWfS95VC6ZmvELlJ4M1Q73FpYSrBOOlowafUT4bxpAKo1Kq5K8D8izDVLJo0Pa1LHpTCvqL87TKtF9hA+w==
   dependencies:
-    signature_pad "^4.0.0"
+    signature_pad "^5.0.1"
     throttle-debounce "^5.0.0"
 
 react-transition-group@^4.4.2:
@@ -8471,10 +8471,10 @@ signal-exit@^3.0.2, signal-exit@^3.0.3:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.7.tgz#a9a1767f8af84155114eaabd73f99273c8f59ad9"
   integrity sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==
 
-signature_pad@^4.0.0:
-  version "4.1.4"
-  resolved "https://registry.yarnpkg.com/signature_pad/-/signature_pad-4.1.4.tgz#b1ff36f2565ad7455d9174fd9f2e7affc872e666"
-  integrity sha512-NKLm9uhRfEPl8cdbbyYAiPsoJ3slIo1AyKg3tzwy8OCX2zQc6jrccUlgMBTJPcUsZXNU8o6fy7iX33rtYSoQHQ==
+signature_pad@^5.0.1:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/signature_pad/-/signature_pad-5.0.2.tgz#190c4f8abf5d2fb3aff9c20ac3b997ac6f8e0e50"
+  integrity sha512-FSseAwRWznAQg90CnrTbC570u1QYi8gijZiyboc18SK2IUx7sYVZhNPLnJRCnwhpyOpgdqXf91XAHL4Yg41yCg==
 
 sisteransi@^1.0.5:
   version "1.0.5"
