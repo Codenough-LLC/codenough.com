@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 
 const numRings = 15;
-const segmentsPerRing = 50;
+const segmentsPerRing = 25;
 
 const AudioVisualizer = () => {
   const [rings, setRings] = useState([]);
@@ -9,10 +9,20 @@ const AudioVisualizer = () => {
   const analyserRef = useRef(null);
   const animationFrameIdRef = useRef(null);
   const rotationRef = useRef(0);
+  const [viewportSize, setViewportSize] = useState({ width: window.innerWidth, height: window.innerHeight });
 
   useEffect(() => {
+    const handleResize = () => {
+      setViewportSize({ width: window.innerWidth, height: window.innerHeight });
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  useEffect(() => {
+    const maxRadius = Math.min(viewportSize.width, viewportSize.height) / 2 - 50;
     const initialRings = Array.from({ length: numRings }, (_, i) => {
-      const baseRadius = i * 30 + 50;
+      const baseRadius = (i / numRings) * maxRadius + 20;
       const segments = Array.from({ length: segmentsPerRing }, (_, j) => ({
         id: j,
         angle: (j / segmentsPerRing) * 2 * Math.PI,
@@ -57,7 +67,7 @@ const AudioVisualizer = () => {
               const amplitudeFactor = frequencyAmplitude / 50;
 
               const newSegments = ring.segments.map(segment =>
-                ({ ...segment, radius: ring.baseRadius + amplitudeFactor * 25 }));
+                ({ ...segment, radius: ring.baseRadius + amplitudeFactor * (viewportSize.width / 150) }));
 
               return {
                 ...ring,
@@ -87,7 +97,7 @@ const AudioVisualizer = () => {
         audioContextRef.current.close();
       }
     };
-  }, []);
+  }, [viewportSize]);
 
   const containerStyle = {
     position: 'fixed',
@@ -114,7 +124,7 @@ const AudioVisualizer = () => {
     <div style={containerStyle}>
       <div style={visualizerWrapperStyle}>
         {rings.map(ring => {
-          const ringDotSize = Math.round(3 + ring.amplitudeFactor);
+          const ringDotSize = Math.round(3 + ring.amplitudeFactor * (viewportSize.width / 2000));
           return (
             <div key={ring.id}>
               {ring.segments.map(segment => (
