@@ -20,6 +20,7 @@ import CreateContractPage from './pages/CreateContractPage';
 import SkydivingGame from './components/SkydivingGame';
 import StrangerThings from './components/stranger-things/StrangerThings';
 import DotChaser from './components/dot-chaser/DotChaser';
+import AudioVisualizer from './components/equalizer/AudioVisualizer';
 
 library.add(faArrowDown, faCloud);
 
@@ -41,8 +42,11 @@ const App = () =>
                 <Route path="/dot-chaser" element={
                     <DotChaserSocketContext.Provider value={DotChaserSocket}>
                         <DotChaser />
-                    </DotChaserSocketContext.Provider>}
-                />
+                    </DotChaserSocketContext.Provider>
+                } />
+                <Route path="/audio-visualizer" element={
+                    <AudioVisualizer />
+                } />
                 <Route path="/create-invoice" element={
                     <ProtectedRoute redirectPath="/create-invoice">
                         <InternalPageLayout pageTitle="Create Invoice"><CreateInvoicePage /></InternalPageLayout>
