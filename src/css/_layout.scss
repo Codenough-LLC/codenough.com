@@ -1,3 +1,5 @@
+@use 'color-theme-variables' as theme;
+
 .layout-container-main {
     padding: 20px;
 }
@@ -5,8 +7,8 @@
 .page-title {
     text-align: center;
     padding: 10px;
-    color: $page-title-text-color;
-    background: $page-title-background-color;
+    color: theme.$page-title-text-color;
+    background: theme.$page-title-background-color;
 }
 
 @media print {

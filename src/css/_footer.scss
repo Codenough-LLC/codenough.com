@@ -1,14 +1,17 @@
+@use 'variables' as vars;
+@use 'color-theme-variables' as theme;
+
 .site-footer {
     text-align: center;
-    height: $site-footer-height;
+    height: vars.$site-footer-height;
     padding: 5px 0;
-    background: $site-footer-background-color;
-    color: $site-footer-text-color;
+    background: theme.$site-footer-background-color;
+    color: theme.$site-footer-text-color;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-  
+
     a {
       color: white;
     }
