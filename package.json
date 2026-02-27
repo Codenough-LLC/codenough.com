@@ -2,6 +2,7 @@
   "name": "codenough",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@10.30.3",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.2.0",
     "@fortawesome/free-solid-svg-icons": "^7.2.0",
