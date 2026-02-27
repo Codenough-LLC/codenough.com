@@ -15,7 +15,6 @@
     "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
     "react-router-dom": "^6.23.0",
-    "react-scripts": "^5.0.1",
     "react-signature-pad-wrapper": "^3.4.0",
     "react-unity-webgl": "^9.5.2",
     "reactstrap": "^9.2.2",
@@ -24,29 +23,20 @@
     "socket.io-client": "^4.7.5"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "dev": "REACT_APP_LOCAL_RUN=true react-scripts start",
-    "build": "GENERATE_SOURCEMAP=false react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "start": "vite",
+    "dev": "VITE_LOCAL_RUN=true vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "cypress:open": "cypress open"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "devDependencies": {
-    "cypress": "^12.17.4"
+    "@vitejs/plugin-react": "^5.1.4",
+    "cypress": "^12.17.4",
+    "vite": "^7.3.1"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   }
 }

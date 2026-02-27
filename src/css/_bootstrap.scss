@@ -3,7 +3,7 @@ $theme-colors: (
   secondary: #1ccbd2
 ) !default;
 
-@import '~bootstrap/scss/bootstrap.scss';
+@import 'bootstrap/scss/bootstrap.scss';
 
 .btn-circle {
     width: 70px;
