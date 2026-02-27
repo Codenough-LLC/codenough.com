@@ -1,15 +1,15 @@
-@import 'bootstrap.scss';
-@import 'variables.scss';
-@import 'color-theme-variables.scss';
-@import 'logo.scss';
-@import 'layout.scss';
-@import 'header.scss';
-@import 'footer.scss';
-@import 'home.scss';
-@import 'proficiencies.scss';
-@import 'testimonials.scss';
-@import 'stranger-things.scss';
-@import 'create-contract';
+@use 'bootstrap';
+@use 'variables';
+@use 'color-theme-variables';
+@use 'logo';
+@use 'layout';
+@use 'header';
+@use 'footer';
+@use 'home';
+@use 'proficiencies';
+@use 'testimonials';
+@use 'stranger-things';
+@use 'create-contract';
 
 .app {
   text-align: center;

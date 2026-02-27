@@ -1,12 +1,15 @@
+@use 'variables' as vars;
+@use 'color-theme-variables' as theme;
+
 .site-header {
-  padding-top: $site-header-padding-top;
-  padding-bottom: $site-header-padding-bottom;
-  min-height: $site-header-min-height;
-  background-color: $site-header-background-color !important;
+  padding-top: vars.$site-header-padding-top;
+  padding-bottom: vars.$site-header-padding-bottom;
+  min-height: vars.$site-header-min-height;
+  background-color: theme.$site-header-background-color !important;
 }
 
 .site-header * {
-  color: $site-header-text-color !important;
+  color: theme.$site-header-text-color !important;
 }
 
 @media screen and (max-width: 500px) {

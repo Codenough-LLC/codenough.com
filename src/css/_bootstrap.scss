@@ -1,9 +1,16 @@
+@use 'sass:map';
+@use 'sass:color';
+@use 'bootstrap/scss/bootstrap.scss' with (
+  $theme-colors: (
+    primary: #006680,
+    secondary: #1ccbd2
+  )
+);
+
 $theme-colors: (
   primary: #006680,
   secondary: #1ccbd2
-) !default;
-
-@import '~bootstrap/scss/bootstrap.scss';
+);
 
 .btn-circle {
     width: 70px;
@@ -14,13 +21,13 @@ $theme-colors: (
     text-align: center;
     font-size: 32px;
     line-height: 1;
-    box-shadow: lighten(map-get($theme-colors, "primary"), 10%) 0px 0px 7px 2px;
-    background-color: rgba(map-get($theme-colors, "secondary"), 0);
+    box-shadow: color.adjust(map.get($theme-colors, "primary"), $lightness: 10%) 0px 0px 7px 2px;
+    background-color: rgba(map.get($theme-colors, "secondary"), 0);
     transition: all .5s ease-in-out;
 
     &:focus {
-        box-shadow: lighten(map-get($theme-colors, "primary"), 10%) 0px 0px 7px 2px;
-        background-color: rgba(map-get($theme-colors, "secondary"), 0);
+        box-shadow: color.adjust(map.get($theme-colors, "primary"), $lightness: 10%) 0px 0px 7px 2px;
+        background-color: rgba(map.get($theme-colors, "secondary"), 0);
     }
 
     &:hover {
@@ -30,11 +37,11 @@ $theme-colors: (
 
 .btn-circle-dark {
     box-shadow: rgba(255, 255, 255, 0.25) 0px 0px 7px 2px;
-    background-color: rgba(map-get($theme-colors, "secondary"), 0);
+    background-color: rgba(map.get($theme-colors, "secondary"), 0);
 
     &:focus {
         box-shadow: rgba(255, 255, 255, 0.25) 0px 0px 7px 2px;
-        background-color: rgba(map-get($theme-colors, "secondary"), 0);
+        background-color: rgba(map.get($theme-colors, "secondary"), 0);
     }
 }
 
