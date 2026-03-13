@@ -31,7 +31,7 @@
     "cypress:open": "cypress open"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^5.1.4",
+    "@vitejs/plugin-react": "^5.2.0",
     "cypress": "^15.11.0",
     "vite": "^7.3.1"
   },
