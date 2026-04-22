@@ -15,7 +15,7 @@
     "react-device-detect": "^2.2.3",
     "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
-    "react-router-dom": "^7.13.1",
+    "react-router-dom": "^7.14.2",
     "react-signature-pad-wrapper": "^4.3.2",
     "react-unity-webgl": "^10.1.6",
     "reactstrap": "^9.2.3",
