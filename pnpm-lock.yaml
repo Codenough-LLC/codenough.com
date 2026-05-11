@@ -48,8 +48,8 @@ importers:
         specifier: ^4.3.2
         version: 4.3.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-unity-webgl:
-        specifier: ^10.1.6
-        version: 10.1.6(react@18.3.1)
+        specifier: ^10.2.0
+        version: 10.2.0(react@18.3.1)
       reactstrap:
         specifier: ^9.2.3
         version: 9.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1310,8 +1310,8 @@ packages:
       react: '>=16.6.0'
       react-dom: '>=16.6.0'
 
-  react-unity-webgl@10.1.6:
-    resolution: {integrity: sha512-N67RdvdeCfKDpzxKdu9K1fnFpb0xmqDF2Qk74f4B07iP9H/4XouG/RjSK4hYYCUmzeBv76G7DWTUK7hgF43TYw==}
+  react-unity-webgl@10.2.0:
+    resolution: {integrity: sha512-I1Uo6qbKK5aEQq4mzorRz45QUWvtFQ2UbcdGxlig8cbFt9JqDMuLjiqbk1hjR+Xj4Zxxic/LF3NP+97G3O/lOQ==}
     peerDependencies:
       react: '>=16.8.0'
 
@@ -1529,6 +1529,7 @@ packages:
 
   uuid@8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   verror@1.10.0:
@@ -2753,7 +2754,7 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  react-unity-webgl@10.1.6(react@18.3.1):
+  react-unity-webgl@10.2.0(react@18.3.1):
     dependencies:
       react: 18.3.1
 
